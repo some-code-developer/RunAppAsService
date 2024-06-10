@@ -29,9 +29,11 @@ ServiceDescription=Very Important Service
 ## Using with InnoSetup
 
 [Run]
+
 Filename: "{app}\rass.exe"; Parameters: "/INSTALL /SILENT ; Flags: shellexec hidewizard runminimized waituntilterminated runascurrentuser dontlogparameters; 
 
 [UninstallRun]
+
 Filename: "{app}\rass.exe"; Parameters: "/STOP"; Flags: skipifdoesntexist runhidden shellexec waituntilterminated; 
 Filename: "{app}\rass.exe"; Parameters: "/UNINSTALL /SILENT"; Flags: skipifdoesntexist runhidden shellexec waituntilterminated; 
 
