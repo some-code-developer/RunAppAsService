@@ -2,7 +2,7 @@
 
 ## About
 
-Minimalistic windows serivice mananager. Originally was created to run NodeJS applications as windows service. Can be used as part InnoSetup script to istall the service 
+Minimalistic windows serivice mananager. Originally was created to run NodeJS applications as windows service. Can be used as part InnoSetup script to install the service 
 
 ## Usage
 
