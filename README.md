@@ -6,10 +6,10 @@ Minimalistic windows serivice mananager. Originally was created to run NodeJS ap
 
 ## Usage
 
-1 Copy raas.exe into separate folder
-2 Create raas.ini file in the same folder
-3 Edit raas.ini and set parameters 
-4 Run raas.exe /INSTALL to install the serivice
+1. Copy raas.exe into separate folder
+2. Create raas.ini file in the same folder
+3. Edit raas.ini and set parameters 
+4. Run raas.exe /INSTALL to install the serivice
 
 ## raas.ini parameters
 
