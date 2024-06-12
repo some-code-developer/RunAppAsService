@@ -13,8 +13,8 @@ Minimalistic windows serivice mananager. Originally was created to run NodeJS ap
 
 ## raas.ini parameters
 
-AppName=some.exe
-ServiceName=ImportantService
+AppName=some.exe\
+ServiceName=ImportantService\
 ServiceDescription=Very Important Service
 
 **Note:** if AppName is missing service will start and write an error into windows event log
@@ -34,7 +34,7 @@ Filename: "{app}\rass.exe"; Parameters: "/INSTALL /SILENT ; Flags: shellexec hid
 
 [UninstallRun]
 
-Filename: "{app}\rass.exe"; Parameters: "/STOP"; Flags: skipifdoesntexist runhidden shellexec waituntilterminated; 
+Filename: "{app}\rass.exe"; Parameters: "/STOP"; Flags: skipifdoesntexist runhidden shellexec waituntilterminated;\ 
 Filename: "{app}\rass.exe"; Parameters: "/UNINSTALL /SILENT"; Flags: skipifdoesntexist runhidden shellexec waituntilterminated; 
 
 ## License 
