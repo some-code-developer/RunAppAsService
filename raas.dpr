@@ -13,8 +13,8 @@ uses
 
 {$R 'MessageFile.res'}
 {$SetPEFlags IMAGE_FILE_LARGE_ADDRESS_AWARE or IMAGE_FILE_RELOCS_STRIPPED}
-begin
 
+begin
   if FindCmdLineSwitch('STOP') then
     begin
      if ServiceRunning('', AnsiUpperCase(ServiceName)) then

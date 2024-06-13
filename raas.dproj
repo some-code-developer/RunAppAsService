@@ -130,7 +130,7 @@
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <VerInfo_MinorVer>0</VerInfo_MinorVer>
-        <Debugger_RunParams>/INSTALL</Debugger_RunParams>
+        <Debugger_RunParams>/INSTALL PASSWORD=1234</Debugger_RunParams>
         <DCC_Namespace>Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_MajorVer>1</VerInfo_MajorVer>
@@ -176,6 +176,7 @@
         <DCC_RangeChecking>true</DCC_RangeChecking>
         <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
         <DCC_ConsoleTarget>true</DCC_ConsoleTarget>
+        <Debugger_RunParams>/INSTALL PASSWORD=1234</Debugger_RunParams>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -257,8 +258,8 @@
                 <Platform value="Win64">True</Platform>
             </Platforms>
             <Deployment Version="3">
-                <DeployFile LocalName="..\..\..\EXE\Win32\raas.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
+                <DeployFile LocalName="..\EXE\Win64\raas.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win64">
                         <RemoteName>raas.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -298,8 +299,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="..\EXE\Win64\raas.exe" Configuration="Release" Class="ProjectOutput">
-                    <Platform Name="Win64">
+                <DeployFile LocalName="..\..\..\EXE\Win32\raas.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
                         <RemoteName>raas.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>

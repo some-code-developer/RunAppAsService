@@ -21,16 +21,18 @@ ServiceDescription=Very Important Service
 
 ## Command line switches
 
-- INSTALL - Create windows service
+- INSTALL   - Create windows service
 - UNINSTALL - Delete windows service
-- STOP - Stop windows service
-- SILENT - Supresses instalaltion messages
+- STOP      - Stop windows service
+- SILENT    - Supresses instalaltion messages
+- USERNAME  - Service User Name
+- PASSWORD  - User Password
 
 ## Using with InnoSetup
 
 [Run]
 
-Filename: "{app}\rass.exe"; Parameters: "/INSTALL /SILENT ; Flags: shellexec hidewizard runminimized waituntilterminated runascurrentuser dontlogparameters; 
+Filename: "{app}\rass.exe"; Parameters: "/INSTALL /SILENT USERNAME=jonh PASSWORD=test; Flags: shellexec hidewizard runminimized waituntilterminated runascurrentuser dontlogparameters; 
 
 [UninstallRun]
 
