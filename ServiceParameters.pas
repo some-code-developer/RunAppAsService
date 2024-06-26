@@ -36,10 +36,10 @@ function GetTitle:string;
      AppName := Settings.Values['AppName'];
      ServiceDescription := Settings.Values['ServiceDescription'];
 
-    Settings.delimiter:=' ';
-    Settings.DelimitedText:=cmdline;
-    _User:= Settings.Values['USER'];
-    _PASSWORD:= Settings.Values['PASSWORD'];
+     Settings.delimiter:=' ';
+     Settings.DelimitedText:=cmdline;
+     _User:= Settings.Values['USER'];
+     _PASSWORD:= Settings.Values['PASSWORD'];
     end;
   finalization
    FreeAndNil(Settings);

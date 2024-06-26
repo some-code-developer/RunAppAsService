@@ -11,6 +11,7 @@ uses
   RegisterMessages in 'RegisterMessages.pas',
   ServiceParameters in 'ServiceParameters.pas';
 
+{$R *.res}
 {$R 'MessageFile.res'}
 {$SetPEFlags IMAGE_FILE_LARGE_ADDRESS_AWARE or IMAGE_FILE_RELOCS_STRIPPED}
 

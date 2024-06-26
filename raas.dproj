@@ -142,6 +142,7 @@
         <DCC_ExeOutput>.\EXE\$(Platform)</DCC_ExeOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_ConsoleTarget>true</DCC_ConsoleTarget>
+        <Icon_MainIcon>raas_Icon.ico</Icon_MainIcon>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_MapFile>3</DCC_MapFile>
